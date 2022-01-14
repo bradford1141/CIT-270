@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "express": "^4.17.2",
     "jest": "^27.4.7"
-  }
+  },
+  "name": "cit-270",
+  "version": "1.0.0",
+  "description": "CIT 270 API",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradford1141/CIT-270.git"
+  },
+  "author": "Tyson Bradford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradford1141/CIT-270/issues"
+  },
+  "homepage": "https://github.com/bradford1141/CIT-270#readme"
 }
