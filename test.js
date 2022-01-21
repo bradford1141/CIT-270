@@ -1,4 +1,4 @@
-import sayHello from '../helloworld';
+import sayHello from './helloworld';
 import assert from 'assert';
 import { isTypedArray } from 'util/types';
 
