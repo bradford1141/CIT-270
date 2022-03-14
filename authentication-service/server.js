@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 app.post('/login', (req, res) => {
     let passHash = md5(req.body.password);
-    if(req.body.userName == "bradford1141" && passHash == "46de89b0e37534254f58ef29a6719939"){
+    if(req.body.userName == "bradford1141" && passHash == "94e7757c35f73c811c4487d8e320cff6"){
         res.send("Welcome!")
     } else{
         res.send("Who are you?");
