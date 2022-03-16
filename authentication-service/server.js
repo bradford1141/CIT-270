@@ -12,6 +12,8 @@ const https = require('https');
 
 const app = express();
 
+let invalidLoginAttempts=0;
+
 app.use(express.static('public'));
 
 app.use(bodyParser.json());
@@ -25,6 +27,9 @@ app.post('/login', (req, res) => {
     if(req.body.userName == "bradford1141" && passHash == "94e7757c35f73c811c4487d8e320cff6"){
         res.send("Welcome!")
     } else{
+        invalidLoginAttempts++;
+        console.log(invalidLoginAttempts+"invalid attempt")
+        res.status(401);
         res.send("Who are you?");
     }
 });
